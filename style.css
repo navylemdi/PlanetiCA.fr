@@ -1,0 +1,135 @@
+body
+{
+background-color: azure;;
+font-family : 'Lato';
+margin-top: 0px;
+}
+
+h1
+{
+	text-align : left;
+	color : rgb(255, 255, 255);
+	font-size: 150%;
+    font-weight: 200;
+		
+}
+
+h2
+{
+    font-weight: 400;
+	font-size: 400% ;
+    width: fit-content;
+    color : rgb(255, 255, 255);
+}
+
+h3
+{
+    font-weight: 300;
+	font-size: 200% ;
+    width: fit-content;
+    color : rgb(0, 0, 0);
+    text-align: justify;
+	
+}
+h4
+{
+    font-weight: bold;
+	font-size: 200% ;
+    width: fit-content;
+    color : rgb(0, 0, 0);
+    text-align: justify;
+}
+
+hr
+{
+    width: 100   ;
+    color: black;
+}
+
+header
+{
+    background-image: url('https://images.unsplash.com/photo-1539321908154-04927596764d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80');
+    background-size: cover;
+    background-position: center;
+}
+a
+{
+    font-family:"Lato";
+    font-size: large;
+}
+
+.bandeau
+{
+    display : flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.liens
+{
+    display : flex;
+    align-items: center;
+    gap : 1.5rem;
+}
+
+.Titre
+{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+.liens a
+{
+    transition-duration: 500ms;
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.liens a:hover
+{
+    opacity: 1;
+}
+
+.presentation
+{
+    display : flex;
+    align-items: left;
+    justify-content: start;
+    
+}
+.Ouverture_observatoire
+{
+    display : flex;
+    align-items: left;
+    justify-content: start;
+}
+.image
+{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.mail{
+    font-weight: 200;
+	font-size: 100% ;
+    width: fit-content;
+    /*color : rgb(0, 0, 0);>*/
+    text-align: justify;
+}
+.FB{
+    font-weight: 200;
+	font-size: 100% ;
+    width: fit-content;
+    /*color : rgb(0, 0, 0);*/
+    text-align: justify;
+}
