@@ -82,7 +82,17 @@ a
     height: 200px;
     width: 100%;
 }
-
+.Sous_titre
+{
+    display : flex;
+    align-items: left;
+    justify-content: left;
+    height: 100px;
+    width: 100%;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 200%;
+}
 .liens a
 {
     transition-duration: 500ms;
@@ -115,21 +125,32 @@ a
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-
+    width: 50%;
 }
 
-.mail{
+.mail
+{
     font-weight: 200;
 	font-size: 100% ;
     width: fit-content;
     /*color : rgb(0, 0, 0);>*/
     text-align: justify;
 }
-.FB{
+.FB
+{
     font-weight: 200;
 	font-size: 100% ;
     width: fit-content;
     /*color : rgb(0, 0, 0);*/
     text-align: justify;
+}
+
+.image_inline-block 
+{
+    display: flex;
+    align-items: center;
+    height:  450px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
