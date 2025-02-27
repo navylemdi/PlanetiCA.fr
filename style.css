@@ -1,156 +1,251 @@
+/*setup du style*/
 body
 {
-background-color: azure;;
-font-family : 'Lato';
-margin-top: 0px;
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+font-family: 'Courier New', Courier, monospace;
+background-color: rgba(131, 128, 128, 0.527);
+display: flex;
+flex-direction: column;
 }
 
-h1
-{
-	text-align : left;
-	color : rgb(255, 255, 255);
-	font-size: 150%;
-    font-weight: 200;
-		
-}
-
-h2
-{
-    font-weight: 400;
-	font-size: 400% ;
-    width: fit-content;
-    color : rgb(255, 255, 255);
-}
-
-h3
-{
-    font-weight: 300;
-	font-size: 200% ;
-    width: fit-content;
-    color : rgb(0, 0, 0);
-    text-align: justify;
-	
-}
-h4
-{
-    font-weight: bold;
-	font-size: 200% ;
-    width: fit-content;
-    color : rgb(0, 0, 0);
-    text-align: justify;
-}
-
-hr
-{
-    width: 100   ;
-    color: black;
-}
-
+/*Début Navbar*/
+/*esthétique du bandeau intégral*/
 header
 {
-    background-image: url('https://images.unsplash.com/photo-1539321908154-04927596764d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80');
-    background-size: cover;
-    background-position: center;
+    height: 95vh;
+    width: 100vw;
+    background-image: url(Habillage/bandeau.jpg);
+    background-size:cover ;
 }
-a
+/*esthétique du la navbar*/
+.navbar
 {
-    font-family:"Lato";
-    font-size: large;
+position: absolute;
+padding: 50px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+box-sizing: border-box;
+align-items: center;
 }
-
-.bandeau
+/*couleur du text de la nav bar*/
+.navbar a
 {
-    display : flex;
-    position: sticky;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-}
-
-.liens
-{
-    display : flex;
-    align-items: center;
-    gap : 1.5rem;
-}
-
-.Titre
-{
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 100%;
-}
-.Sous_titre
-{
-    display : flex;
-    align-items: left;
-    justify-content: left;
-    height: 100px;
-    width: 100%;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 200%;
-}
-.liens a
-{
-    transition-duration: 500ms;
     color: white;
-    opacity: 0.5;
     text-decoration: none;
 }
-
-.liens a:hover
+/*aspect du logo*/
+.navbar .logo
 {
-    opacity: 1;
+    font-size: 2em;
+    font-weight: bold;
 }
-
-.presentation
-{
-    display : flex;
-    align-items: left;
-    justify-content: start;
-    
-}
-.Ouverture_observatoire
-{
-    display : flex;
-    align-items: left;
-    justify-content: start;
-}
-.image
+/*affichage des pages en lignes*/
+.navbar .nav-links ul
 {
     display: flex;
+    list-style-type: none;
+}
+/*écartement des noms de pages*/
+.navbar .nav-links ul li
+{
+    margin: 25px;
+}
+/*couleur de la page choisie*/
+.navbar .nav-links ul li.active a
+{
+ color: red;
+ font-weight: 600;
+}
+
+/* aspect du menu burger*/
+.navbar .menu-hamburger 
+{
+display: none;    
+position: absolute;
+top: 50px;
+right: 50px;
+width: 50px;
+}
+
+/*réactivité selon le support*/
+@media screen and (max-width: 1053px)
+{
+   /*enlever les marges*/ 
+    .navbar 
+    {
+        padding: 0;
+    }
+    /*Position du logo en réactivitée*/
+    .navbar .logo
+    {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    }
+    /*affichage du menu burger*/
+    .navbar .menu-hamburger 
+    {
+      display: block;
+    }
+    /*affichage du nav type tel*/
+    .nav-links ul{
+        list-style-type: none;
+    }
+    .nav-links 
+    {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.144);
+      backdrop-filter: blur(7px);
+      width: 100%;
+      height: 95vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: all 0.5s ease;
+
+    }
+    /* affichage du menu type tel au click*/
+    .nav-links.mobile-menu
+    {
+    margin-left: 0;
+    }
+    /*affichage du nom des pages*/
+    .nav-links ul
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+}
+/*Fin navbar*/
+
+/*Début footer*/
+/*Style du pied de page*/
+footer
+{
+border-top: 1px dashed #000;
+width: 100%;
+background-color: rgb(0, 0, 0
+);
+color: beige;
+}
+/*dimensions logo réseaux pied de page*/
+.reseaux-footer
+{
+width: 30px;
+}
+/*mise en place du text en pied de page*/
+.contenu-footer
+{
+width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+font-size: 15px;
+padding: 50px 0 px;
+}
+/*espacement des blocs pied de pages*/
+.bloc
+{
+width: 33%;
+margin: 0 30px;
+}
+/*contact footer*/
+.footer-direct h3,
+.footer-infos h3,
+.foorer-reseaux h3
+{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.footer-infos p
+{
+padding: 0px;
+color: white;
+}
+
+/*enlèvement des puces pied de page*/
+
+.liste-liens,
+.liste-reseaux
+{
+    list-style-type: none;
+    margin: 0;
+}
+/*Décalage liste de liens footer*/
+.liste-liens li
+{
+    padding: 2px;
+}
+/*enlèvement decoration de lien + couleur footer*/
+.liste-liens a
+{
+    text-decoration: none;
+    color: white;
+}
+/*couleur survol liens footer*/
+.liste-liens a:hover
+{
+    color: rgb(161, 161, 161);
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    font-size: 15px;
 }
-
-.mail
+/*réseaux*/
+.liste-reseaux img
 {
-    font-weight: 200;
-	font-size: 100% ;
-    width: fit-content;
-    /*color : rgb(0, 0, 0);>*/
-    text-align: justify;
+width: 30px;
+margin: 10px 10px;
 }
-.FB
+.liste-reseaux a
 {
-    font-weight: 200;
-	font-size: 100% ;
-    width: fit-content;
-    /*color : rgb(0, 0, 0);*/
-    text-align: justify;
-}
-
-.image_inline-block 
-{
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
-    height:  450px;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 15;
 }
+/*responsive pied de page 1300px*/
+@media screen and (max-width:1300px)
+{
+    .contenu-footer{
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .bloc{
+        width: 40%;
+        margin: 0 0;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 50px;
+    }
+}
+/*responsive pied de page 800px*/
+@media screen and (max-width:800px)
+{
+    .contenu-footer{
+        width: 320px;
+    }
+    .bloc{
+        width: 300px;
+        margin: 30px 30px;
+    }
+    .bloc:nth-child(1),
+    .bloc:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .bloc:nth-child(1){
+        margin-top: 0;
+    }
+}
+/*Fin footer*/

@@ -7,83 +7,77 @@
     <meta name="author" content="DILEM Yvan" />
     <meta name="description" content="PlanetiCA" />
     <meta name="keywords"
-        content="planetiCA, Reims, astronomie, association, club, telescope, observation, astrophotographie, astrodessin, observatoire, beine, nauroy" />
+        content="planetiCA, Reims, astronomie, association, club, telescope, observation, astrophotographie, astrodessin, observatoire, beine, nauroy, Planética, Planétarium," />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=”robots” content=”index,follow”>
-    <title>Planetica - L'association</title>
+    <title> Planetica </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
         integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
-        <nav class="bandeau">
-            <h1>PlanetiCA</h1>
-            <div class="liens">
-                <a href="index.html"> Actualité</a>
-                <a href="Association.html"> L'association</a>
-                <a href="Animation_publique.html"> Animation publique</a>
-                <a href="Galerie_photo.html"> Galerie photo</a>
-                <a href="Contact.html"> Contact</a>
-            </div>
-        </nav>
-        <div class="Titre">
-            <h2>
-                L'association
-            </h2>
-        </div>
-    </header>
-    <section>
-        <article class="Presentation">
-            <h3>
-            PlanétiCA est une association des passionnés d'astronomie.<br />
-            L'association organise des visites et observation publique à l'observatoire de Beine-Nauroy et à l'observatiore de Taissy. <br />
-            Nous réalisons des manifestations publiques gratuites comme la Nuit des étoiles ou lors d'évènements
-            astronomiques remarquables (observation d'éclipse, de comètes).<br />
-            Si le temps le permet, des observations du ciel nocturne sont effectuées les vendredi soirs.<br />
-            <br>
-            De plus l'association permet à ses membres de se rencontrer et échanger autour des techniques de
-            l'astronomie, l'astrophotographie ou encore le dessin d'objets célestes.<br />
-        </article>
-        
-        <div class="Sous_titre">
-                L'Observatoire de Beine-Nauroy:
-        </div>
-        
-        <article class="Presentation">
-            <h3>
-            <img src="./2020-observatoire-comete.jpg" alt="observatoire Beine-Nauroy" class='image' /><br />
-                L’observatoire  de Beine-Nauroy est équipé d’un télescope de 410 mm F/6.<br />
-                D'autres instruments disponibles sur place:
+    <header></header>
+    
+     <!-- Onglet de navigation-->
+     <nav class="navbar">
+        <a href="#" class="logo">PlanétiCA</a>
+        <div class="nav-links">
             <ul>
-                <li>Un Schmidt-Cassegrain altazimutal GPS de 250 mm.</li>
-                <li>Un Schmidt-Cassegrain altazimutal de 200 mm.</li>
-                <li>Une lunette apochromatique de 102 mm.</li>
-                <li>Plusieurs petits instruments (lunettes de 60 mm, télescope de 115 mm – deux télescopes solaires avec filtre H alpha type Coronado).</li>
+                <li><a href="index.html">Acceuil</a></li>
+                <li class="active"><a href="Association.html">L'association</a></li>
+                <li><a href="Animation_publique.html">Réservations</a></li>
+                <li><a href="Astrophoto.html">Astro photo</a></li>
+                <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
-            Pour les observations nocturnes, il y a possibilité de couper l’éclairage public du quartier<br />
-            
-        </h3>
+        </div>
+        <img src="Habillage/menu_burger.jpg" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+   
+    <!-- Script du déroulement du menu type tel-->
+   <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+   <!-- fin onglet de navigation-->
+   <!-- Début contenu de la page-->
 
-        </article>
-        
-        <div class="Sous_titre">
-                L'Observatoire de Taissy:
-            </div>
-        
-        <article class="Presentation">
-            <h3>
-                <div class="image_inline-block">
-                    <img src="./Obs Taissy/Observatoire Taissy-4.jpg" alt="observatoire Taissy" class="image_inline-block"/>
-                    <img src="./Obs Taissy/Img2004-06-08 120827.jpg" alt="observatoire Taissy" class="image_inline-block"/>
-                </div>
-            <br />
-            Depuis 1998 et après une restauration de l'instrument, l'association PlanétiCA, avec l'appui de la municipalité, organise des évènements pédagogiques à l'observatoire de Taissy. </br>
-            Construit en 1984, le téléscope de 410mm en bois est un chef d'oeuvre de menuiserie. Le miroir lui aussi taillé à la main par Raymond EYMANN et Michel WALBAUM fait de ce telescope l'un des dernier de ce genre ouvert au public en France. </br>
-            </h3>
-        </article>
-    </section>
+   <!-- Fin contenu de la page-->
+   <!-- Début pied de page-->
+   <footer>
+    <!-- Liens directs-->
+    <div class="contenu-footer">
+        <div class="bloc footer-direct">
+            <h3>Liens directs</h3>
+            <ul class="liste-liens">
+                <li><a href="https://www.helloasso.com/associations/planetica/adhesions/adhesion-planetica">Adhérer</a></li>
+                <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
+                <li><a href="https://www.helloasso.com/associations/planetica/formulaires/1">Faire un don</a></li>
+            </ul>
+        </div>
+        <!-- Les infos légale-->
+        <div class="bloc footer-infos">
+            <h3>Restons en contact</h3>
+            <p>PlanétiCA</p>
+            <p>49 Avenue du général de Gaulle, Reims, 51100</p>
+            <P>association@planetica.fr</P>
+        </div>
+        <!-- Les réseaux sociaux-->
+        <div class="bloc footer-reseaux">
+            <h3>Nos réseaux</h3>
+            <ul class="liste-reseaux">
+                <li><a href="https://www.instagram.com/planeticastro51?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="reseaux-footer" src="Habillage/logo_insta.png" alt="icones réseaux sociaux">Planeticastro51</a></li>
+                <li><a href="https://www.facebook.com/people/Planetica-Reims/pfbid0Edsc1AJCLfMWT3XF8f5caznJgSettSbRxzRTw6mLQwcZR4v5TMch2tcMhhQr57w1l/?locale=fr_FR"><img class="reseaux-footer" src="Habillage/logo-facebook.png" alt="icones réseaux sociaux">Planetica reims</a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+<!-- Fin pied de page-->
 </body>
 
 </html>
