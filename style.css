@@ -15,7 +15,7 @@ flex-direction: column;
 /*esthétique du bandeau intégral*/
 header
 {
-    height: 95vh;
+    height: 90vh;
     width: 100vw;
     background-image: url(Habillage/bandeau.jpg);
     background-size:cover ;
