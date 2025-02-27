@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="author" content="DILEM Yvan" />
+    <meta name="description" content="PlanetiCA" />
+    <meta name="keywords"
+        content="planetiCA, Reims, astronomie, association, club, telescope, observation, astrophotographie, astrodessin, observatoire, beine, nauroy, Planética, Planétarium," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”robots” content=”index,follow”>
+    <title> Planetica </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+        integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header></header>
+    
+     <!-- Onglet de navigation-->
+     <nav class="navbar">
+        <a href="#" class="logo">PlanétiCA</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="Association.html">L'association</a></li>
+                <li><a href="Animation_publique.html">Réservations</a></li>
+                <li><a href="Astrophoto.html">Astro photo</a></li>
+                <li class="active"><a href="Contact.html">Contact</a></li>
+                <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
+            </ul>
+        </div>
+        <img src="Habillage/menu_burger.jpg" alt="menu hamburger" class="menu-hamburger">
+    </nav>
+    <!-- Script du déroulement du menu type tel-->
+   <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+   <!-- fin onglet de navigation-->
+   <!-- Début contenu de la page-->
+
+   <!-- Fin contenu de la page-->
+   <!-- Début pied de page-->
+   <footer>
+    <!-- Liens directs-->
+    <div class="contenu-footer">
+        <div class="bloc footer-direct">
+            <h3>Liens directs</h3>
+            <ul class="liste-liens">
+                <li><a href="https://www.helloasso.com/associations/planetica/adhesions/adhesion-planetica">Adhérer</a></li>
+                <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
+                <li><a href="https://www.helloasso.com/associations/planetica/formulaires/1">Faire un don</a></li>
+            </ul>
+        </div>
+        <!-- Les infos légale-->
+        <div class="bloc footer-infos">
+            <h3>Restons en contact</h3>
+            <p>PlanétiCA</p>
+            <p>49 Avenue du général de Gaulle, Reims, 51100</p>
+            <P>association@planetica.fr</P>
+        </div>
+        <!-- Les réseaux sociaux-->
+        <div class="bloc footer-reseaux">
+            <h3>Nos réseaux</h3>
+            <ul class="liste-reseaux">
+                <li><a href="https://www.instagram.com/planeticastro51?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="reseaux-footer" src="Habillage/logo_insta.png" alt="icones réseaux sociaux">Planeticastro51</a></li>
+                <li><a href="https://www.facebook.com/people/Planetica-Reims/pfbid0Edsc1AJCLfMWT3XF8f5caznJgSettSbRxzRTw6mLQwcZR4v5TMch2tcMhhQr57w1l/?locale=fr_FR"><img class="reseaux-footer" src="Habillage/logo-facebook.png" alt="icones réseaux sociaux">Planetica reims</a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+<!-- Fin pied de page-->
+</body>
+
+</html>
