@@ -4,21 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="author" content="DILEM Yvan" />
+    <meta name="author" content="NOEL Nicolas" />
     <meta name="description" content="PlanetiCA" />
     <meta name="keywords"
         content="planetiCA, Reims, astronomie, association, club, telescope, observation, astrophotographie, astrodessin, observatoire, beine, nauroy, Planética, Planétarium," />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=”robots” content=”index,follow”>
-    <title> Planetica </title>
+    <title> Planetica - Contact </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
         integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
 </head>
 
 <body>
-    <header></header>
-    
+    <header class="header_contact"></header>
      <!-- Onglet de navigation-->
      <nav class="navbar">
         <a href="#" class="logo">PlanétiCA</a>
@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="index.html">Acceuil</a></li>
                 <li><a href="Association.html">L'association</a></li>
-                <li><a href="Animation_publique.html">Réservations</a></li>
+                <li><a href="Réservations.html">Réservations</a></li>
                 <li><a href="Astrophoto.html">Astro photo</a></li>
                 <li class="active"><a href="Contact.html">Contact</a></li>
                 <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
@@ -35,17 +35,30 @@
         <img src="Habillage/menu_burger.jpg" alt="menu hamburger" class="menu-hamburger">
     </nav>
     <!-- Script du déroulement du menu type tel-->
-   <script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-   </script>
+   <script src="script_menu.js"></script>
    <!-- fin onglet de navigation-->
    <!-- Début contenu de la page-->
-
+   <div class="container_formulaire">
+    <h1>Contactez nous!</h1>
+    <p class="description_formulaire">Nous sommes la pour vous! N'hésitez pas à nous poser vos questions en remplissant le formulaire ci-dessous.</p>
+    <form action="mail.php">
+      <label for="fname">Nom & prénom</label>
+      <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+  
+      <label for="sujet">Sujet</label>
+      <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+  
+      <label for="emailAddress">Email</label>
+      <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+  
+  
+      <label for="subject">Message</label>
+      <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+  
+      <input type="submit" value="Envoyer">
+    </form>
+  </div>
+  
    <!-- Fin contenu de la page-->
    <!-- Début pied de page-->
    <footer>
