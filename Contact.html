@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
         integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
@@ -45,7 +48,26 @@
    </script>
    <!-- fin onglet de navigation-->
    <!-- Début contenu de la page-->
-
+        <div class="container">
+            <h1>Contactez nous!</h1>
+            <p class="p_des_contact">Nous sommes la pour vous! N'hésitez pas a nous poser vos questions via le formulaire ci_dessous</p>
+            <form action="/mail.php">
+              <label for="fname">Nom & prénom</label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+          
+              <label for="sujet">Sujet</label>
+              <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+          
+              <label for="emailAddress">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+          
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+          </div>
    <!-- Fin contenu de la page-->
    <!-- Début pied de page-->
    <footer>
