@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
         integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body>
@@ -35,69 +32,15 @@
                 Contacts
             </h2>
         </div>
-        <img src="Habillage/menu_burger.jpg" alt="menu hamburger" class="menu-hamburger">
-    </nav>
-    <!-- Script du déroulement du menu type tel-->
-   <script>
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-   </script>
-   <!-- fin onglet de navigation-->
-   <!-- Début contenu de la page-->
-        <div class="container">
-            <h1>Contactez nous!</h1>
-            <p class="p_des_contact">Nous sommes la pour vous! N'hésitez pas a nous poser vos questions via le formulaire ci_dessous</p>
-            <form action="/mail.php">
-              <label for="fname">Nom & prénom</label>
-              <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
-          
-              <label for="sujet">Sujet</label>
-              <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
-          
-              <label for="emailAddress">Email</label>
-              <input id="emailAddress" type="email" name="email" placeholder="Votre email">
-          
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-          
-              <input type="submit" value="Envoyer">
-            </form>
-          </div>
-   <!-- Fin contenu de la page-->
-   <!-- Début pied de page-->
-   <footer>
-    <!-- Liens directs-->
-    <div class="contenu-footer">
-        <div class="bloc footer-direct">
-            <h3>Liens directs</h3>
-            <ul class="liste-liens">
-                <li><a href="https://www.helloasso.com/associations/planetica/adhesions/adhesion-planetica">Adhérer</a></li>
-                <li><a href="https://b.photo-portal.shop/share/54Nduai/#/CollectionShare/9a6d86817baad8d873dc24fd01e1ba32_0776d88a-a075-4b4b-9f4d-b398a354ec74/fr-FR/9beFn5xfIW0jNhxxNy3soCCcbaWRlfBhpsduN2Jw8iM9MwHr6t01ToHB9UU9Sna9/">la boutique</a></li>
-                <li><a href="https://www.helloasso.com/associations/planetica/formulaires/1">Faire un don</a></li>
-            </ul>
-        </div>
-        <!-- Les infos légale-->
-        <div class="bloc footer-infos">
-            <h3>Restons en contact</h3>
-            <p>PlanétiCA</p>
-            <p>49 Avenue du général de Gaulle, Reims, 51100</p>
-            <P>association@planetica.fr</P>
-        </div>
-        <!-- Les réseaux sociaux-->
-        <div class="bloc footer-reseaux">
-            <h3>Nos réseaux</h3>
-            <ul class="liste-reseaux">
-                <li><a href="https://www.instagram.com/planeticastro51?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="reseaux-footer" src="Habillage/logo_insta.png" alt="icones réseaux sociaux">Planeticastro51</a></li>
-                <li><a href="https://www.facebook.com/people/Planetica-Reims/pfbid0Edsc1AJCLfMWT3XF8f5caznJgSettSbRxzRTw6mLQwcZR4v5TMch2tcMhhQr57w1l/?locale=fr_FR"><img class="reseaux-footer" src="Habillage/logo-facebook.png" alt="icones réseaux sociaux">Planetica reims</a></li>
-            </ul>
-        </div>
-    </div>
-   </footer>
-<!-- Fin pied de page-->
+    </header>
+    <section>
+        <article class="contact">
+            <h3>
+                Si notre association vous intéresse, nous sommes joignable par mail à <a href="mailto:planetica@free.fr" class="mail">planetica@free.fr</a> ou sur Facebook: 
+                <a href="https://www.facebook.com/profile.php?id=100087613614574" target="_blank" class="FB"> PlanetiCA</a> <br />
+                Vous pouvez aussi contacter le planetarium au 03.26.35.34.70 ou par mail : <a href="mailto:planetarium@mairie-reims.fr" class="mail">planetarium@mairie-reims.fr</a> <br />
+            </h3>
+        </article>
+    </section>
 </body>
 </html>
