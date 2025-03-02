@@ -354,7 +354,7 @@ justify-content: center;
   .gallery-nav li.gallery-item-selected {
     background: #555;
   }
-/*mise en page du formulaire de contact
+/*mise en page du formulaire de contact*/
 input[type=text], textarea, input[type=email] 
 {
   width: 100%;
@@ -399,13 +399,13 @@ justify-content: center;
 }
 .container_formulaire
  {
-  /* Ajouter box-sizing 
+  /* Ajouter box-sizing */
   box-sizing : border-box;
   border-radius:5px;
   background-color:transparent;
   padding:20px;
   width: 100%;
-  /* redéfinition 400 + 2*20 
+  /* redéfinition 400 + 2*20 */
   max-width: 900px;
   margin:0 auto;
 }
